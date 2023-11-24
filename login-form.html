@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="shakes.css.css">
+  <title>MasterCraft Survey Form</title>
+  <head>
+<body>
+    <main>
+    <form method="post" action="survey-form" class="survey-form" id="survey-form">
+    <h1 id="title">MasterCraft Survey Form</h1>
+    <p id="description">Thank you for taking your time to complete this Survey.</p>
+  <fieldset>
+  <label for="name" id="name-label">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  <label for="email" id="email-label">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  <label for="number" id="number-label">Age (optional):</label>
+  <input type="number" id="number" name="number" min="17" max="85" placeholder="Age">
+  <label for="dropdown">Which one best describe your role?</label>
+  <select id="dropdown" name="dropdown">
+  <option value="">(select one)</option>
+  <option value="1">Student</option>
+  <option value="2">Lecturer</option>
+  <option value="3">Receptionist</option>
+  <option value="4">other</option>
+</select>
+</fieldset>
+<fieldset>
+  <legend>Would you recommend MasterCraft to a friend?</legend>
+  <div class="improve">
+    <input type="radio" id="yes" name="link" class="inline"  value="link" checked>
+    <label for="yes">Yeah sure!</label>
+  </div>
+  <div class="improve">
+    <input type="radio" id="maybe" name="link" class="inline" value="link">
+    <label for="maybe">Maybe</label>
+  </div>
+  <div class="improve">
+    <input type="radio" id="no" name="link" class="inline" value="link">
+    <label for="no">No</label>
+  </div>
+</fieldset>
+<fieldset>
+  <legend>Which of our design do you like the most?</legend>
+  <select id="dropdown" name="dropdown">
+  <option value="">(select one)</option>
+  <option value="1">Music Pluq</option>
+  <option value="2">Wall picture</option>
+<option value="3">Cellphone pouch</option>
+    <option value="4">Key holders</option>
+</select>
+</fieldset>
+<fieldset>
+<legend>Please tell us where would you like us to improve</legend>
+<div>
+<div class="improve">
+    <input type="checkbox" name="delivery" id="delivery" class="inline" value="delivery">
+    <label for="delivery"> Delevery time</label>
+</div>
+<div class="improve">
+    <input type="checkbox" id="none" name="none" class="inline" value="none">
+    <label for="none">Add more style to our Music Pluq</label>
+</div>
+<div class="improve">
+    <input type="checkbox" id="valu" name="valu" name="valu" class="inline" value="valu">
+    <label for="valu">Reasonable Pricing</label>
+</div>
+</div>
+<label for="bio">Please tell us more where to improve</label>
+<textarea type="text" id="bio" name="bio" col="40" row="3" placeholder="I would like you to improve on..."></textarea>
+<label for="info">Tell us more about yourself</label>
+<textarea type="text" id="info" name="info" col="40" row="3" placeholder="I am very handsome"></textarea>
+<input type="submit" id="submit" value="submit" class="button">
+</fieldset>
+</form>
+</main>
+</body>
+</html>
